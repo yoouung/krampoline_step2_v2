@@ -8,6 +8,7 @@ function Main() {
   
     useEffect(()=> {
         getTest().then((data)=> {
+            console.log(data);
             setName(data);
         });
     },[]);
