@@ -1,6 +1,6 @@
 import './App.css';
 import logo from './logo.svg'
-import { useState, useEffect } from 'React';
+import { useState, useEffect } from 'react';
 import { getTest } from './api.js';
 
 function Main() {
