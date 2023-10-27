@@ -1,10 +1,16 @@
 import './App.css';
 import logo from './logo.svg'
-
+import { useState, useEffect } from 'React';
+import { getTest } from './api.js';
 
 function Main() {
-  const name = process.env.NAME;
-  console.log(process.env);
+  const [name,setName] = useState('');
+  
+    useEffect(()=> {
+        getTest().then((data)=> {
+            setName(data);
+        });
+    },[]);
 
   return (
     <div className="App">

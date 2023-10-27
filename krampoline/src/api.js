@@ -9,7 +9,7 @@ const instance = axios.create({
 });
 
 const getTest = async (props) => {
-  return await instance.get(`/test`);
+  return await instance.get(`/`);
 };
 
 export { instance, getTest };
