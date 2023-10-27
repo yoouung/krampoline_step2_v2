@@ -7,7 +7,7 @@ function Main() {
   const [name,setName] = useState('');
   
     useEffect(()=> {
-        getTest().then((data)=> {
+        getTest().then(({data})=> {
             console.log(data);
             setName(data);
         });
