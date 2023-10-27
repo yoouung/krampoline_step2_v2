@@ -15,8 +15,8 @@ metadata:
   name: backend
 spec:
   ports:
-    - port: 3000
-      targetPort: 3001
+    - port: 4000
+      targetPort: 4000
   selector:
     app: backend
 

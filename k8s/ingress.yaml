@@ -18,6 +18,6 @@ spec:
         pathType: Prefix
       - backend:
           serviceName: backend
-          servicePort: 3001
+          servicePort: 4000
         path: /api
         pathType: Prefix
