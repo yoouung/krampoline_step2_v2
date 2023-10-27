@@ -9,10 +9,15 @@ metadata:
   namespace: default
 spec:
   rules:
-    - http:
-        paths:
-          - backend:
-              serviceName: frontend
-              servicePort: 3000
-              path: /
-              pathType: Prefix
+  - http:
+      paths:
+      - backend:
+          serviceName: frontend
+          servicePort: 3000
+        path: /
+        pathType: Prefix
+      - backend:
+          serviceName: backend
+          servicePort: 3001
+        path: /api
+        pathType: Prefix

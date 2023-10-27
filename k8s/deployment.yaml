@@ -14,4 +14,25 @@ spec:
       containers:
         - name: frontend
           # 여러분의 image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_01ec3e49f767:latest
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_130acadc3108:latest
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          # 여러분의 image 주소를 입력해주세요.
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_52e5143fb9a9:latest
+          env:
+          - name: CODE
+            value: "모노"
