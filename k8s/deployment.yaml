@@ -14,7 +14,7 @@ spec:
       containers:
         - name: frontend
           # 여러분의 image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_130acadc3108:latest
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_373bf4ec2983
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -32,7 +32,7 @@ spec:
       containers:
         - name: backend
           # 여러분의 image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_52e5143fb9a9:latest
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_0b161c0687e6
           env:
           - name: CODE
             value: "비비와 모노"
