@@ -35,4 +35,4 @@ spec:
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_0b161c0687e6
           env:
           - name: CODE
-            value: "비비와 모노"
+            value: "모노"
